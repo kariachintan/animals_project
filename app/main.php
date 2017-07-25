@@ -6,6 +6,8 @@
  */
 // Including the autoloader file.
 include_once('autoload.php');
+// Including the petShop file
+include 'petShop.php';
 
 use Animals\Cat as Cat;
 use Animals\Dog as Dog;
@@ -26,9 +28,6 @@ printf("Name is currently %s<br>", $dog->getName());
 $dog->setName("Tommy");
 printf("Name has been changed to %s<br>", $dog->getName());
 echo PHP_EOL;
-
-// Including the petShop file
-include 'petShop.php';
 
 // Save animals to database.
 saveTest();
